@@ -1,11 +1,12 @@
+Options +Indexes
+echo "Options +Indexes" >> .htaccess
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
 
     RewriteEngine On
-    
-    Options +Indexes
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
