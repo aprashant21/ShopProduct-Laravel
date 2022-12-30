@@ -1,0 +1,454 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body{
+	height:100%;
+	margin: 0;
+}
+body{
+	text-align: left;
+  background-color: #E2DCDC;
+}
+
+.imgdata{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.navlogo{
+	height: 90px;
+	width: 90px;
+	float: left;
+	margin-left: 30px
+}
+
+/*middle body*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+/*columns content*/
+
+.no-gutters > .col,
+.no-gutters > [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+/*column content close*/
+.row::after {
+  content: "";
+  clear: both;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.row2::after {
+  content: "";
+  clear: both;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top:20px;
+}
+.row2{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top:0;
+}
+
+#noticediv{
+  background-repeat: no-repeat;
+	background-color: red;
+	color:black;
+	font-family: Times New Roman;
+  border-radius: 10px;
+}
+
+/*middlebody close*/
+
+/*Footer*/
+footer{
+	background-color: darkgrey;
+	padding:20px;
+	text-align: center;
+  margin-top: 200px;
+
+}
+/*footer close*/
+
+/*sidebarhome style*/
+.menuul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.menuli {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menuli:hover {
+  background-color: #0099cc;
+}
+
+.menua{
+	text-decoration: none;
+}
+/*sidebarhome style close*/
+
+/*sidebar admin style/*/
+.sideul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: lightgreen;
+}
+
+.sideli {
+  padding: 8px;
+  margin-bottom: 50px;
+  background-color: green;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-size: 20px;
+}
+
+.sideli:hover {
+  background-color: lightcyan;
+}
+
+.sidea{
+  text-decoration: none;
+  color: white;
+}
+
+/*sidebar admin close*/
+
+
+/*image slider of index page start*/
+.mySlides {display: none}
+img {vertical-align: middle; height: 500px;width: 80px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 5s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 15s;
+  animation-name: fade;
+  animation-duration: 15s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*slider button close*/
+
+/*form start*/
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+.imagesbrowser{
+
+  font-size: 16px;
+  font:bold;
+  font-family: Times New Roman;
+  margin-bottom: 20px;
+
+}
+
+.button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+.buttondelete {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: red;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+.buybtn {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: green;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+}
+}
+
+
+
+/*form close*/
+
+
+/*Table css start*/
+
+.table {
+    margin: 0;
+}
+.table-responsive.table--no-card {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.table-product thead th {
+    background: #333;
+    font-size: 16px;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 22px 40px;
+    white-space: nowrap;
+}
+
+.table-product thead th.text-right {
+    padding-left: 15px;
+    padding-right: 65px;
+}
+
+.table-product tbody td {
+    color: #808080;
+    padding: 12px 40px;
+    white-space: nowrap;
+}
+
+.table-product tbody td.text-right {
+    padding-left: 15px;
+    padding-right: 65px;
+}
+
+.table-product tbody tr:hover td {
+    color: #555;
+    cursor: pointer;
+}
+/*Table css end*/
+
+
+/*sidebar css*/
+.menu-sidebar {
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    overflow-y: auto;
+}
+.menu-sidebar .logo {
+    background: #f5f5f5;
+    height: auto;
+    max-width:100% ;
+    padding: 0 35px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #e5e5e5;
+    position: relative;
+    z-index: 3;
+}
+
+.menu-sidebar .navbar__list .navbar__sub-list {
+    display: none;
+    padding-left: 34px;
+}
+
+.menu-sidebar .navbar__list .navbar__sub-list li a {
+    padding: 11.5px 0;
+}
+
+.menu-sidebar__content {
+    position: relative;
+    height: -webkit-calc(100vh - 75px);
+    height: -moz-calc(100vh - 75px);
+    height: calc(100vh - 75px);
+}
+/*sidebar css end*/
