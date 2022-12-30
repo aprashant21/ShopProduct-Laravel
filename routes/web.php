@@ -74,3 +74,7 @@ Route::any('esewa/success', [EsewaController::class, 'success'])->name('esewa.su
 Route::any('esewa/fail', [EsewaController::class, 'fail'])->name('esewa.fail');
 Route::get('payment/response', [EsewaController::class, 'payment_response'])->name('payment.response');
 Route::get('fonepay/return', [FonepayController::class, 'onepay_response'])->name('fonepay.return');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
